@@ -1,0 +1,286 @@
+2022-04-09 12:40:35.769 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 18981 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 12:40:35.771 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 12:40:35.853 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 12:40:36.920 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 12:40:36.924 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 12:40:36.957 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-04-09 12:40:37.085 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 12:40:37.487 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 12:40:37.495 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 12:40:37.495 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 12:40:37.495 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 12:40:37.571 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 12:40:37.571 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1691 ms
+2022-04-09 12:40:38.524 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 12:40:38.626 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 12:40:38.626 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 12:40:38.627 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 12:40:38.627 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 12:40:38.805 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 12:40:38.822 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 12:40:38.829 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 12:40:38.952 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 12:40:38.973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 12:40:38.976 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.86 seconds (JVM running for 4.762)
+2022-04-09 12:40:43.534 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 12:45:21.179 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 19057 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 12:45:21.230 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 12:45:21.238 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 12:45:21.982 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 12:45:21.984 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 12:45:22.010 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-04-09 12:45:22.116 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 12:45:22.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 12:45:22.507 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 12:45:22.508 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 12:45:22.508 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 12:45:22.577 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 12:45:22.578 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1310 ms
+2022-04-09 12:45:23.460 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 12:45:23.547 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 12:45:23.547 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 12:45:23.548 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 12:45:23.548 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 12:45:23.685 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 12:45:23.699 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 12:45:23.710 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 12:45:23.847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 12:45:23.866 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 12:45:23.869 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.144 seconds (JVM running for 3.953)
+2022-04-09 12:46:04.915 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 12:46:04.915 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 12:46:04.927 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2022-04-09 12:46:04.948 [http-nio-8003-exec-1] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-09 12:46:04.948 [http-nio-8003-exec-1] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-09 12:46:04.948 [http-nio-8003-exec-1] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-09 12:47:49.527 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-04-09 12:47:49.530 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-04-09 12:51:42.716 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:13:59.134 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 19566 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:13:59.135 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:13:59.140 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:14:00.020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:14:00.024 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:14:00.067 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-04-09 13:14:00.202 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:14:00.655 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:14:00.665 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:14:00.666 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:14:00.666 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:14:00.736 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:14:00.737 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1526 ms
+2022-04-09 13:14:01.785 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:14:01.888 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:14:01.889 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:14:01.889 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:14:01.890 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:14:02.046 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:14:02.074 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:14:02.082 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:14:02.200 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:14:02.221 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:14:02.223 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.639 seconds (JVM running for 4.324)
+2022-04-09 13:20:33.664 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:20:38.628 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 19789 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:20:38.629 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:20:38.634 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:20:40.282 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:20:40.289 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:20:40.352 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2022-04-09 13:20:40.609 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:20:41.186 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:20:41.197 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:20:41.197 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:20:41.197 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:20:41.276 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:20:41.276 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2538 ms
+2022-04-09 13:20:42.564 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:20:42.669 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:20:42.670 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:20:42.671 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:20:42.671 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:20:42.821 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:20:42.834 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:20:42.843 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:20:42.963 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:20:42.982 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:20:42.986 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 5.241 seconds (JVM running for 5.932)
+2022-04-09 13:25:38.833 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:25:38.835 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:25:38.856 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2022-04-09 13:30:11.010 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:30:16.546 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 19982 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:30:16.579 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:30:16.587 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:30:17.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:30:17.385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:30:17.416 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-04-09 13:30:17.529 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:30:17.897 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:30:17.907 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:30:17.908 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:30:17.909 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:30:17.980 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:30:17.980 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1348 ms
+2022-04-09 13:30:18.922 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:30:19.023 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:30:19.023 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:30:19.024 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:30:19.024 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:30:19.186 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:30:19.199 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:30:19.208 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:30:19.327 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:30:19.350 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:30:19.354 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.363 seconds (JVM running for 3.947)
+2022-04-09 13:30:21.396 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:30:21.396 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:30:21.403 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-04-09 13:34:01.417 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:34:06.054 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:34:06.112 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 20084 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:34:06.113 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:34:06.989 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:34:06.990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:34:07.015 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-04-09 13:34:07.110 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:34:07.498 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:34:07.505 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:34:07.506 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:34:07.506 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:34:07.573 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:34:07.573 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1408 ms
+2022-04-09 13:34:08.500 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:34:08.602 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:34:08.603 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:34:08.604 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:34:08.604 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:34:08.759 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:34:08.773 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:34:08.787 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:34:08.931 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:34:08.953 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:34:08.957 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.484 seconds (JVM running for 4.172)
+2022-04-09 13:34:12.788 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:34:12.789 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:34:12.795 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-04-09 13:35:12.426 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:35:27.338 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:35:27.397 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 20117 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:35:27.398 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:35:28.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:35:28.179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:35:28.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-04-09 13:35:28.314 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:35:28.658 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:35:28.665 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:35:28.665 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:35:28.665 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:35:28.722 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:35:28.722 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1274 ms
+2022-04-09 13:35:29.527 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:35:29.601 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:35:29.601 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:35:29.602 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:35:29.602 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:35:29.731 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:35:29.742 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:35:29.750 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:35:29.846 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:35:29.864 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:35:29.866 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.087 seconds (JVM running for 3.824)
+2022-04-09 13:35:35.323 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:35:35.324 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:35:35.335 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2022-04-09 13:36:50.542 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:36:54.763 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:36:54.770 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 20147 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:36:54.771 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:36:55.585 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:36:55.587 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:36:55.610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-04-09 13:36:55.699 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:36:56.009 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:36:56.016 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:36:56.016 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:36:56.016 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:36:56.069 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:36:56.069 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1199 ms
+2022-04-09 13:36:56.867 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:36:56.954 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:36:56.955 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:36:56.955 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:36:56.955 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:36:57.066 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:36:57.078 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:36:57.087 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:36:57.202 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:36:57.223 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:36:57.226 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 2.962 seconds (JVM running for 3.473)
+2022-04-09 13:36:59.963 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:36:59.964 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:36:59.979 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2022-04-09 13:37:37.642 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:37:41.861 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 20159 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:37:41.862 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:37:41.874 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:37:42.690 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:37:42.692 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:37:42.717 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-04-09 13:37:42.811 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:37:43.153 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:37:43.160 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:37:43.161 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:37:43.161 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:37:43.219 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:37:43.220 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1271 ms
+2022-04-09 13:37:44.054 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:37:44.136 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:37:44.136 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:37:44.137 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:37:44.137 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:37:44.274 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:37:44.295 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:37:44.303 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:37:44.401 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:37:44.423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:37:44.425 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.019 seconds (JVM running for 3.52)
+2022-04-09 13:37:47.128 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:37:47.128 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:37:47.133 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-04-09 13:39:42.852 [http-nio-8003-exec-6] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-09 13:39:42.853 [http-nio-8003-exec-6] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-09 13:39:42.854 [http-nio-8003-exec-6] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-09 13:42:12.589 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:42:17.001 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-04-09 13:42:17.006 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 20253 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-09 13:42:17.006 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-09 13:42:18.026 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-09 13:42:18.028 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-09 13:42:18.054 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-04-09 13:42:18.160 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-09 13:42:18.483 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-09 13:42:18.490 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:42:18.490 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-09 13:42:18.490 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-09 13:42:18.549 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-09 13:42:18.549 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1451 ms
+2022-04-09 13:42:19.413 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-09 13:42:19.504 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-09 13:42:19.504 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-09 13:42:19.505 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-09 13:42:19.505 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-09 13:42:19.622 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-09 13:42:19.637 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-09 13:42:19.649 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-09 13:42:19.765 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-09 13:42:19.786 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-09 13:42:19.788 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.183 seconds (JVM running for 3.704)
+2022-04-09 13:42:32.818 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-09 13:42:32.819 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-09 13:42:32.825 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-04-09 13:42:51.559 [http-nio-8003-exec-6] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-04-09 13:42:51.561 [http-nio-8003-exec-6] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-04-09 13:43:29.121 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.96.160.21:6379
+2022-04-09 13:43:29.151 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.96.160.21:6379
+2022-04-09 14:01:18.040 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

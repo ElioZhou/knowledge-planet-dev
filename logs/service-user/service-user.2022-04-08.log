@@ -1,0 +1,727 @@
+2022-04-08 17:41:06.549 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 32995 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:41:06.553 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:41:07.452 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:41:07.627 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:41:08.170 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:41:08.185 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:41:08.189 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:41:08.190 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:41:08.282 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:41:08.282 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1623 ms
+2022-04-08 17:41:08.507 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 17:41:08.634 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedDataBinder
+2022-04-08 17:41:08.635 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 17:41:08.637 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:41:08.655 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:41:08.663 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedDataBinder
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at art.knowledgeplanet.user.Application.main(Application.java:9)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedDataBinder
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedDataBinder
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder.bind(DruidDataSourceBuilder.java:48)
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder.build(DruidDataSourceBuilder.java:41)
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:44)
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$7d246d3e.CGLIB$dataSource$0(<generated>)
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$7d246d3e$$FastClassBySpringCGLIB$$976ac8fb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$7d246d3e.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedDataBinder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 33 common frames omitted
+2022-04-08 17:46:33.503 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33193 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:46:33.506 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:46:34.322 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:46:34.463 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:46:34.937 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:46:34.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:46:34.950 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:46:34.950 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:46:35.049 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:46:35.049 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1443 ms
+2022-04-08 17:46:35.268 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 17:46:35.390 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:46:35.391 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 17:46:35.394 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:46:35.410 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:46:35.415 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:48:53.444 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33269 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:48:53.447 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:48:54.245 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:48:54.618 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:48:54.626 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:48:54.627 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:48:54.627 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:48:54.689 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:48:54.689 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1152 ms
+2022-04-08 17:48:54.750 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:48:54.753 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:48:54.767 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:48:54.773 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:49:39.427 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33295 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:49:39.430 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:49:40.009 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:49:40.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:49:40.328 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:49:40.329 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:49:40.329 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:49:40.403 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:49:40.404 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 940 ms
+2022-04-08 17:49:40.463 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:49:40.464 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:49:40.476 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:49:40.481 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:49:54.886 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33310 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:49:54.888 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:49:55.589 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:49:55.937 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:49:55.947 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:49:55.947 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:49:55.947 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:49:56.028 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:49:56.029 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1095 ms
+2022-04-08 17:49:56.101 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:49:56.103 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:49:56.118 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:49:56.123 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:50:08.041 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33318 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:50:08.043 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:50:08.548 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:50:08.816 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:50:08.826 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:50:08.827 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:50:08.828 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:50:08.892 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:50:08.892 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 794 ms
+2022-04-08 17:50:08.947 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:50:08.949 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:50:08.960 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:50:08.964 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:50:35.239 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33342 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:50:35.241 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:50:35.733 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:50:35.999 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:50:36.006 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:50:36.006 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:50:36.007 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:50:36.077 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:50:36.077 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 779 ms
+2022-04-08 17:50:36.123 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:50:36.125 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:50:36.135 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:50:36.140 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 17:52:08.750 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 33382 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 17:52:08.752 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 17:52:09.352 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 17:52:09.689 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 17:52:09.698 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 17:52:09.698 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 17:52:09.698 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 17:52:09.774 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 17:52:09.775 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 956 ms
+2022-04-08 17:52:09.836 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 17:52:09.838 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 17:52:09.850 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 17:52:09.856 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:11:16.874 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 35286 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:11:16.877 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:11:17.713 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:11:18.169 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:11:18.178 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:11:18.179 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:11:18.179 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:11:18.273 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:11:18.273 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1317 ms
+2022-04-08 18:11:18.348 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:11:18.350 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:11:18.365 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:11:18.370 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:14:30.916 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 35531 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:14:30.919 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:14:31.498 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:14:31.847 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:14:31.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:14:31.856 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:14:31.856 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:14:31.929 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:14:31.929 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 974 ms
+2022-04-08 18:14:31.999 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:14:32.002 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:14:32.014 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:14:32.020 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:14:53.205 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 35546 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:14:53.207 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:14:53.769 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:14:54.069 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:14:54.078 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:14:54.079 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:14:54.079 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:14:54.152 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:14:54.152 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 912 ms
+2022-04-08 18:14:54.213 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:14:54.216 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:14:54.227 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:14:54.233 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:23:57.983 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36074 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:23:57.986 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:23:58.621 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:23:58.968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:23:58.979 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:23:58.980 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:23:58.980 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:23:59.065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:23:59.065 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1010 ms
+2022-04-08 18:23:59.148 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:23:59.151 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:23:59.176 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:23:59.182 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:24:52.262 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36117 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:24:52.265 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:24:52.932 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:24:53.262 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:24:53.271 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:24:53.272 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:24:53.272 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:24:53.347 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:24:53.348 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1014 ms
+2022-04-08 18:24:53.413 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:24:53.415 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:24:53.427 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:24:53.433 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:25:04.129 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36129 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:25:04.132 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:25:04.836 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:25:05.227 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:25:05.238 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:25:05.239 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:25:05.239 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:25:05.327 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:25:05.327 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1119 ms
+2022-04-08 18:25:05.389 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:25:05.391 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:25:05.406 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:25:05.411 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:25:44.477 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36166 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:25:44.479 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:25:45.157 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:25:45.504 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:25:45.512 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:25:45.513 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:25:45.513 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:25:45.586 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:25:45.587 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1062 ms
+2022-04-08 18:25:45.652 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:25:45.654 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:25:45.668 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:25:45.675 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:25:55.546 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36177 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:25:55.548 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:25:56.213 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:25:56.545 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:25:56.555 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:25:56.556 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:25:56.556 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:25:56.626 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:25:56.626 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1006 ms
+2022-04-08 18:25:56.701 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:25:56.703 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:25:56.715 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:25:56.720 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 18:26:37.218 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 36216 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 18:26:37.222 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 18:26:37.874 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 18:26:38.264 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 18:26:38.276 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 18:26:38.277 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 18:26:38.277 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 18:26:38.373 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 18:26:38.374 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1081 ms
+2022-04-08 18:26:38.445 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 18:26:38.447 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 18:26:38.462 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 18:26:38.468 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 19:11:48.917 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 2485 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 19:11:48.921 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-08 19:11:49.900 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 19:11:50.328 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-08 19:11:50.339 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:11:50.339 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 19:11:50.340 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 19:11:50.417 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 19:11:50.417 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1382 ms
+2022-04-08 19:11:50.940 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 19:11:51.095 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-08 19:11:51.096 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-08 19:11:51.096 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-08 19:11:51.096 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-08 19:11:51.214 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:11:51.250 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-08 19:11:51.254 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 3.22 seconds (JVM running for 4.133)
+2022-04-08 19:12:40.904 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 19:12:40.904 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-08 19:12:40.912 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-04-08 19:14:08.169 [http-nio-8003-exec-5] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-08 19:14:08.171 [http-nio-8003-exec-5] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-08 19:14:08.171 [http-nio-8003-exec-5] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-08 19:14:36.986 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 19:14:41.362 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 2737 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 19:14:41.364 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-08 19:14:41.913 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 19:14:42.188 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-08 19:14:42.195 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:14:42.195 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 19:14:42.196 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 19:14:42.260 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 19:14:42.261 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 833 ms
+2022-04-08 19:14:42.636 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 19:14:42.766 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-08 19:14:42.767 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-08 19:14:42.767 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-08 19:14:42.767 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-08 19:14:42.849 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:14:42.892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-08 19:14:42.895 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 1.989 seconds (JVM running for 2.617)
+2022-04-08 19:16:14.526 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 19:16:18.670 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 2794 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 19:16:18.672 [main] INFO  art.knowledgeplanet.user.Application - No active profile set, falling back to default profiles: default
+2022-04-08 19:16:19.194 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 19:16:19.467 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-08 19:16:19.474 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-08 19:16:19.475 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 19:16:19.475 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 19:16:19.534 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 19:16:19.535 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 798 ms
+2022-04-08 19:16:19.598 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-service-user/target/classes/art/knowledgeplanet/user/mapper/AppUserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-04-08 19:16:19.601 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-08 19:16:19.611 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 19:16:19.618 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-04-08 19:21:46.961 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 3147 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 19:21:46.964 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-08 19:21:47.742 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 19:21:48.076 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-08 19:21:48.087 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:21:48.088 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 19:21:48.088 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 19:21:48.174 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 19:21:48.174 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1126 ms
+2022-04-08 19:21:48.609 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 19:21:48.762 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-08 19:21:48.763 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-08 19:21:48.763 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-08 19:21:48.763 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-08 19:21:48.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-08 19:21:48.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-08 19:21:48.880 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 2.542 seconds (JVM running for 3.192)
+2022-04-08 19:21:53.492 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 19:21:53.493 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-08 19:21:53.498 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-04-08 19:21:53.519 [http-nio-8003-exec-1] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-08 19:21:53.519 [http-nio-8003-exec-1] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-08 19:21:53.519 [http-nio-8003-exec-1] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-08 19:54:21.677 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 20:06:49.194 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 3927 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-04-08 20:06:49.198 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-04-08 20:06:50.706 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-04-08 20:06:51.333 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-04-08 20:06:51.344 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-04-08 20:06:51.344 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-08 20:06:51.344 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-04-08 20:06:51.445 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-08 20:06:51.446 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2122 ms
+2022-04-08 20:06:52.485 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 20:06:52.592 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-04-08 20:06:52.592 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-04-08 20:06:52.592 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-04-08 20:06:52.593 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-04-08 20:06:52.697 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-08 20:06:52.738 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-08 20:06:52.809 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-08 20:06:53.035 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-04-08 20:06:53.068 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-04-08 20:06:53.073 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 4.647 seconds (JVM running for 5.696)
+2022-04-08 20:07:06.668 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 20:07:06.668 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-08 20:07:06.676 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-04-08 20:07:06.696 [http-nio-8003-exec-1] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-08 20:07:06.696 [http-nio-8003-exec-1] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-08 20:07:06.696 [http-nio-8003-exec-1] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-08 20:10:18.223 [http-nio-8003-exec-6] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-08 20:10:18.226 [http-nio-8003-exec-6] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-08 20:10:18.226 [http-nio-8003-exec-6] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-08 20:13:03.628 [http-nio-8003-exec-1] INFO  a.k.user.controller.HelloController - info: hello~
+2022-04-08 20:13:03.631 [http-nio-8003-exec-1] WARN  a.k.user.controller.HelloController - warn: hello~
+2022-04-08 20:13:03.631 [http-nio-8003-exec-1] ERROR a.k.user.controller.HelloController - error: hello~
+2022-04-08 20:14:23.931 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

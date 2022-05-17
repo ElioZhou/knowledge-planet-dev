@@ -1,0 +1,288 @@
+2022-05-08 00:06:21.662 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:06:21.710 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 00:16:21.885 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:16:21.892 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 00:26:21.999 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:26:22.012 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 00:36:22.116 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:36:22.120 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 00:46:22.227 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:46:22.231 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 00:56:22.443 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 00:56:22.458 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:06:22.657 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:06:22.667 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:16:22.880 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:16:22.890 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:26:22.985 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:26:22.998 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:36:23.105 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:36:23.109 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:46:23.220 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:46:23.223 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 01:56:23.428 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 01:56:23.437 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:06:23.645 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:06:23.649 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:16:23.764 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:16:23.771 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:26:23.866 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:26:23.870 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:36:23.979 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:36:23.985 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:46:24.188 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:46:24.195 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 02:56:24.314 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 02:56:24.324 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:06:24.416 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:06:24.419 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:16:24.539 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:16:24.542 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:26:24.644 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:26:24.647 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:36:24.765 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:36:24.772 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:46:24.882 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:46:24.885 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 03:56:24.993 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 03:56:25.004 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:06:25.100 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:06:25.104 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:16:25.226 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:16:25.238 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:26:25.435 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:26:25.438 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:36:25.542 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:36:25.545 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:46:25.647 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:46:25.649 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 04:56:25.745 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 04:56:25.752 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:06:25.849 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:06:25.864 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:16:25.961 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:16:25.967 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:26:26.062 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:26:26.066 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:36:26.265 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:36:26.277 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:46:26.370 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:46:26.378 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 05:56:26.584 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 05:56:26.595 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:06:26.699 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:06:26.704 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:16:26.800 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:16:26.805 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:26:27.005 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:26:27.017 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:36:27.107 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:36:27.109 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:46:27.204 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:46:27.210 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 06:56:27.417 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 06:56:27.430 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:06:27.612 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:06:27.618 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:16:27.724 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:16:27.730 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:26:27.824 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:26:27.838 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:36:28.030 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:36:28.034 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:46:28.132 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:46:28.136 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 07:56:28.234 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 07:56:28.244 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:06:28.331 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:06:28.335 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:16:28.447 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:16:28.451 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:26:28.643 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:26:28.656 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:36:28.750 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:36:28.756 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:46:28.861 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:46:28.863 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 08:56:28.971 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 08:56:28.974 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:06:29.169 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:06:29.172 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:16:29.364 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:16:29.378 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:26:29.479 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:26:29.483 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:36:29.588 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:36:29.592 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:46:29.697 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:46:29.702 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 09:56:29.805 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 09:56:29.809 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:06:29.913 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:06:29.935 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:16:30.024 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:16:30.031 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:26:30.237 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:26:30.247 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:36:30.432 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:36:30.436 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:46:30.630 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:46:30.635 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 10:56:30.731 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 10:56:30.743 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:06:30.837 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:06:30.840 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:16:30.942 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:16:30.950 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:26:31.150 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:26:31.154 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:36:31.351 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:36:31.355 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:46:31.446 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:46:31.452 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 11:56:31.656 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 11:56:31.666 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:06:31.762 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:06:31.772 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:16:31.957 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:16:31.961 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:26:32.152 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:26:32.156 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:36:32.263 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:36:32.267 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:46:32.449 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:46:32.452 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 12:56:32.649 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 12:56:32.654 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:06:32.761 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:06:32.765 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:16:32.953 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:16:32.957 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:26:33.162 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:26:33.166 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:36:33.251 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:36:33.255 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:46:33.451 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:46:33.453 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 13:56:33.648 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 13:56:33.651 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:06:33.838 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:06:33.871 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:16:34.036 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:16:34.058 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:26:34.225 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:26:34.232 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:36:34.424 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:36:34.439 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:46:34.624 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:46:34.635 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 14:56:34.824 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 14:56:34.842 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:06:35.026 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:06:35.037 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:16:35.127 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:16:35.159 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:26:35.311 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:26:35.321 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:36:35.511 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:36:35.533 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:46:35.598 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:46:35.603 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 15:56:35.713 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 15:56:35.721 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:06:35.820 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:06:35.830 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:16:36.009 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:16:36.021 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:26:36.110 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:26:36.115 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:36:36.304 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:36:36.308 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:46:36.409 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:46:36.419 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 16:56:36.516 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 16:56:36.545 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:06:36.709 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:06:36.720 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:16:36.906 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:16:36.911 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:26:37.091 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:26:37.095 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:36:37.192 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:36:37.200 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:46:37.279 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:46:37.284 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 17:56:37.479 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 17:56:37.491 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:06:37.677 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:06:37.684 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:16:37.783 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:16:37.794 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:26:37.880 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:26:37.884 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:36:37.984 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:36:37.987 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:46:38.181 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:46:38.184 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 18:56:38.376 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 18:56:38.391 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:06:38.488 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:06:38.492 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:16:38.589 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:16:38.601 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:26:38.691 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:26:38.709 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:36:38.804 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:36:38.818 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:46:39.003 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:46:39.007 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 19:56:39.198 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 19:56:39.210 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:06:39.311 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:06:39.315 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:16:39.414 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:16:39.425 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:26:39.508 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:26:39.512 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:36:39.621 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:36:39.649 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:46:39.828 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:46:39.847 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 20:56:40.034 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 20:56:40.066 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:06:40.236 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:06:40.250 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:16:40.448 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:16:40.461 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:26:40.660 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:26:40.665 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:36:40.766 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:36:40.783 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:46:40.972 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:46:40.979 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 21:56:41.177 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 21:56:41.196 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:06:41.283 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:06:41.290 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:16:41.492 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:16:41.500 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:26:41.605 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:26:41.627 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:36:41.807 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:36:41.833 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:46:42.017 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:46:42.025 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 22:56:42.225 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 22:56:42.233 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:06:42.427 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:06:42.434 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:16:42.639 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:16:42.649 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:26:42.744 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:26:42.751 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:36:42.842 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:36:42.850 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:46:43.052 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:46:43.057 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-08 23:56:43.258 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-08 23:56:43.279 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="knowledge-planet-dev-common" />
+        <module name="knowledge-planet-dev-service-api" />
+        <module name="knowledge-planet-dev-model" />
+        <module name="knowledge-planet-dev-service-user" />
+        <module name="mybatis-generator-database" />
+        <module name="knowledge-planet-service-article" />
+        <module name="knowledge-planet-dev-service-files" />
+        <module name="knowledge-planet-service-admin" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="knowledge-planet-dev-common" options="-parameters" />
+      <module name="knowledge-planet-dev-model" options="-parameters" />
+      <module name="knowledge-planet-dev-service-api" options="-parameters" />
+      <module name="knowledge-planet-dev-service-files" options="-parameters" />
+      <module name="knowledge-planet-dev-service-user" options="-parameters" />
+      <module name="knowledge-planet-service-admin" options="-parameters" />
+      <module name="knowledge-planet-service-article" options="-parameters" />
+    </option>
+  </component>
+</project>

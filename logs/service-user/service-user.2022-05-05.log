@@ -1,0 +1,187 @@
+2022-05-05 22:48:27.153 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 24389 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-05 22:48:27.155 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-05-05 22:48:27.197 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-05 22:48:28.889 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-05 22:48:28.894 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-05 22:48:28.948 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2022-05-05 22:48:29.115 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-05-05 22:48:29.936 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-05-05 22:48:29.945 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-05-05 22:48:29.946 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-05 22:48:29.946 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-05 22:48:30.022 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-05 22:48:30.022 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2730 ms
+2022-05-05 22:48:31.630 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-05 22:48:31.741 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-05 22:48:31.741 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-05 22:48:31.742 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-05 22:48:31.742 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-05 22:48:31.952 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-05 22:48:31.965 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-05 22:48:31.972 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-05 22:48:32.138 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-05-05 22:48:32.160 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-05-05 22:48:32.167 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 5.749 seconds (JVM running for 7.196)
+2022-05-05 22:49:44.685 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 22:49:44.687 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-05 22:49:44.754 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 65 ms
+2022-05-05 22:49:45.079 [http-nio-8003-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-05 22:49:45.081 [http-nio-8003-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-05 22:49:55.388 [http-nio-8003-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 99.79.50.12:6379] with root cause
+io.netty.channel.ConnectTimeoutException: connection timed out: /99.79.50.12:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-05 22:50:05.382 [http-nio-8003-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 99.79.50.12:6379] with root cause
+io.netty.channel.ConnectTimeoutException: connection timed out: /99.79.50.12:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-05 22:50:15.387 [http-nio-8003-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 99.79.50.12:6379] with root cause
+io.netty.channel.ConnectTimeoutException: connection timed out: /99.79.50.12:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-05 22:50:25.395 [http-nio-8003-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 99.79.50.12:6379] with root cause
+io.netty.channel.ConnectTimeoutException: connection timed out: /99.79.50.12:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-05 22:51:47.113 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-05 22:51:51.888 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 24502 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-05 22:51:51.889 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-05-05 22:51:51.896 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-05 22:51:52.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-05 22:51:53.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-05 22:51:53.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-05-05 22:51:53.156 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-05-05 22:51:53.710 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-05-05 22:51:53.718 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-05-05 22:51:53.718 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-05 22:51:53.718 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-05 22:51:53.788 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-05 22:51:53.789 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1851 ms
+2022-05-05 22:51:55.211 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-05 22:51:55.332 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-05 22:51:55.332 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-05 22:51:55.333 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-05 22:51:55.333 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-05 22:51:55.557 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-05 22:51:55.570 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-05 22:51:55.578 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-05 22:51:55.780 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-05-05 22:51:55.802 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-05-05 22:51:55.804 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 4.444 seconds (JVM running for 5.11)
+2022-05-05 22:52:05.087 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 22:52:05.088 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-05 22:52:05.102 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2022-05-05 22:52:05.305 [http-nio-8003-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-05 22:52:05.310 [http-nio-8003-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-05 22:59:18.766 [http-nio-8003-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.updateUserInfo====
+2022-05-05 22:59:18.956 [http-nio-8003-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2022-05-05 22:59:19.390 [http-nio-8003-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2022-05-05 22:59:19.663 [http-nio-8003-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：895
+2022-05-05 22:59:22.000 [http-nio-8003-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.getUser====
+2022-05-05 22:59:22.011 [http-nio-8003-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：11
+2022-05-05 22:59:22.081 [http-nio-8003-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.getUser====
+2022-05-05 22:59:22.087 [http-nio-8003-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：6
+2022-05-05 23:00:50.731 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-05 23:00:50.737 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown initiated...
+2022-05-05 23:00:50.745 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown completed.
+2022-05-05 23:02:57.324 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 24703 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-05 23:02:57.325 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-05-05 23:02:57.402 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-05 23:02:59.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-05 23:02:59.641 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-05 23:02:59.696 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2022-05-05 23:02:59.929 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-05-05 23:03:00.748 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-05-05 23:03:00.764 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-05-05 23:03:00.765 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-05 23:03:00.765 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-05 23:03:00.873 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-05 23:03:00.874 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3421 ms
+2022-05-05 23:03:02.508 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-05 23:03:02.631 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-05 23:03:02.631 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-05 23:03:02.632 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-05 23:03:02.632 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-05 23:03:02.865 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-05 23:03:02.879 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-05 23:03:02.888 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-05 23:03:03.050 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-05-05 23:03:03.070 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-05-05 23:03:03.074 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 6.391 seconds (JVM running for 7.437)
+2022-05-05 23:03:07.853 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 23:03:07.854 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-05 23:03:07.866 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2022-05-05 23:03:08.055 [http-nio-8003-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-05 23:03:08.057 [http-nio-8003-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-05 23:03:08.513 [http-nio-8003-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.updateUserInfo====
+2022-05-05 23:03:08.686 [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2022-05-05 23:03:09.173 [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2022-05-05 23:03:09.414 [http-nio-8003-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：900
+2022-05-05 23:03:11.210 [http-nio-8003-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.getUser====
+2022-05-05 23:03:11.214 [http-nio-8003-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2022-05-05 23:03:11.250 [http-nio-8003-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.user.service.impl.UserServiceImpl.getUser====
+2022-05-05 23:03:11.252 [http-nio-8003-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2022-05-05 23:11:01.095 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-05 23:11:01.099 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown initiated...
+2022-05-05 23:11:01.107 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown completed.
+2022-05-05 23:11:07.642 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-05 23:11:07.699 [main] INFO  art.knowledgeplanet.user.Application - Starting Application on zhouyuzhendeMBP with PID 24894 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-05 23:11:07.700 [main] INFO  art.knowledgeplanet.user.Application - The following profiles are active: dev
+2022-05-05 23:11:09.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-05 23:11:09.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-05 23:11:09.730 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2022-05-05 23:11:09.959 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.user]' package. Please check your configuration.
+2022-05-05 23:11:10.841 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2022-05-05 23:11:10.854 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2022-05-05 23:11:10.855 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-05 23:11:10.855 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-05 23:11:10.982 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-05 23:11:10.983 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3187 ms
+2022-05-05 23:11:12.489 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-05 23:11:12.641 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-05 23:11:12.642 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-05 23:11:12.642 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-05 23:11:12.642 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-05 23:11:12.857 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-05 23:11:12.870 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-05 23:11:12.882 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-05 23:11:13.099 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2022-05-05 23:11:13.123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2022-05-05 23:11:13.126 [main] INFO  art.knowledgeplanet.user.Application - Started Application in 6.273 seconds (JVM running for 7.401)
+2022-05-05 23:11:17.925 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 23:11:17.925 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-05 23:11:17.940 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2022-05-05 23:11:18.168 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-05 23:11:18.171 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library

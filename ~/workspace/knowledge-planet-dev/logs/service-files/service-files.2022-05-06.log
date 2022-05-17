@@ -1,0 +1,128 @@
+2022-05-06 16:01:10.113 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-06 16:01:10.124 [main] INFO  a.knowledgeplanet.files.Application - Starting Application on zhouyuzhendeMBP with PID 30462 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-06 16:01:10.124 [main] INFO  a.knowledgeplanet.files.Application - The following profiles are active: dev
+2022-05-06 16:01:10.988 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 16:01:10.991 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 16:01:11.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2022-05-06 16:01:11.593 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2022-05-06 16:01:11.601 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:01:11.602 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-06 16:01:11.602 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-06 16:01:11.671 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-06 16:01:11.671 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1483 ms
+2022-05-06 16:01:12.488 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:01:12.752 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-06 16:01:12.765 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-06 16:01:12.775 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-06 16:01:12.798 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:01:12.817 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2022-05-06 16:01:12.821 [main] INFO  a.knowledgeplanet.files.Application - Started Application in 3.34 seconds (JVM running for 4.09)
+2022-05-06 16:01:47.318 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:01:56.016 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-06 16:01:56.018 [main] INFO  a.knowledgeplanet.files.Application - Starting Application on zhouyuzhendeMBP with PID 30475 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-06 16:01:56.019 [main] INFO  a.knowledgeplanet.files.Application - The following profiles are active: dev
+2022-05-06 16:01:56.737 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 16:01:56.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 16:01:56.766 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-05-06 16:01:57.843 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2022-05-06 16:01:57.856 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:01:57.857 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-06 16:01:57.858 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-06 16:01:58.071 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-06 16:01:58.071 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1989 ms
+2022-05-06 16:01:59.401 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:01:59.768 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-06 16:01:59.781 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-06 16:01:59.792 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-06 16:01:59.816 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:01:59.840 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2022-05-06 16:01:59.843 [main] INFO  a.knowledgeplanet.files.Application - Started Application in 4.271 seconds (JVM running for 5.122)
+2022-05-06 16:02:19.047 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-06 16:02:19.048 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-06 16:02:19.056 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-05-06 16:03:40.634 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:52:47.021 [main] INFO  a.knowledgeplanet.files.Application - Starting Application on zhouyuzhendeMBP with PID 31108 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-06 16:52:47.058 [main] INFO  a.knowledgeplanet.files.Application - The following profiles are active: dev
+2022-05-06 16:52:47.077 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-06 16:52:48.354 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 16:52:48.358 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 16:52:48.417 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2022-05-06 16:52:49.207 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2022-05-06 16:52:49.218 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:52:49.219 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-06 16:52:49.219 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-06 16:52:49.323 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-06 16:52:49.323 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2211 ms
+2022-05-06 16:52:50.384 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:52:50.765 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-06 16:52:50.785 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-06 16:52:50.794 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-06 16:52:50.830 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:52:50.852 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2022-05-06 16:52:50.855 [main] INFO  a.knowledgeplanet.files.Application - Started Application in 4.501 seconds (JVM running for 5.36)
+2022-05-06 16:54:05.914 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-06 16:54:05.915 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-06 16:54:05.941 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2022-05-06 16:54:06.214 [http-nio-8004-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-06 16:54:06.218 [http-nio-8004-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-06 16:54:06.507 [http-nio-8004-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.files.service.impl.UploaderServiceImpl.uploadOSS====
+2022-05-06 16:54:07.518 [http-nio-8004-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：1011
+2022-05-06 16:54:07.518 [http-nio-8004-exec-2] INFO  a.k.f.c.FileUploaderController - path = images/abc/220422F5W5S9KFRP/220506C1R5Y5MF5P.jpeg
+2022-05-06 16:55:04.565 [http-nio-8004-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.files.service.impl.UploaderServiceImpl.uploadOSS====
+2022-05-06 16:55:04.625 [http-nio-8004-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：58
+2022-05-06 16:55:04.625 [http-nio-8004-exec-4] INFO  a.k.f.c.FileUploaderController - path = images/abc/220422F5W5S9KFRP/220506C22498T2FW.jpeg
+2022-05-06 16:56:16.554 [http-nio-8004-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.files.service.impl.UploaderServiceImpl.uploadOSS====
+2022-05-06 16:56:17.009 [http-nio-8004-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：453
+2022-05-06 16:56:17.010 [http-nio-8004-exec-8] INFO  a.k.f.c.FileUploaderController - path = images/abc/220422F5W5S9KFRP/220506C2DAP193MW.png
+2022-05-06 16:59:03.852 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:59:09.086 [main] INFO  a.knowledgeplanet.files.Application - Starting Application on zhouyuzhendeMBP with PID 31246 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-06 16:59:09.087 [main] INFO  a.knowledgeplanet.files.Application - The following profiles are active: dev
+2022-05-06 16:59:09.114 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-06 16:59:10.017 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 16:59:10.020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 16:59:10.060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-05-06 16:59:10.790 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2022-05-06 16:59:10.801 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:59:10.801 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-06 16:59:10.802 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-06 16:59:10.873 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-06 16:59:10.873 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1718 ms
+2022-05-06 16:59:11.718 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 16:59:12.017 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-06 16:59:12.033 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-06 16:59:12.046 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-06 16:59:12.079 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2022-05-06 16:59:12.099 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2022-05-06 16:59:12.102 [main] INFO  a.knowledgeplanet.files.Application - Started Application in 3.518 seconds (JVM running for 4.225)
+2022-05-06 16:59:20.835 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-06 16:59:20.836 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-06 16:59:20.851 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2022-05-06 16:59:21.063 [http-nio-8004-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-06 16:59:21.065 [http-nio-8004-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-06 16:59:21.378 [http-nio-8004-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.files.service.impl.UploaderServiceImpl.uploadOSS====
+2022-05-06 16:59:22.090 [http-nio-8004-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：712
+2022-05-06 16:59:22.090 [http-nio-8004-exec-2] INFO  a.k.f.c.FileUploaderController - path = images/abc/220422F5W5S9KFRP/220506C3F3H2F9KP.png
+2022-05-06 17:00:11.907 [http-nio-8004-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.files.service.impl.UploaderServiceImpl.uploadOSS====
+2022-05-06 17:00:11.956 [http-nio-8004-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：49
+2022-05-06 17:00:11.956 [http-nio-8004-exec-4] INFO  a.k.f.c.FileUploaderController - path = images/abc/220422F5W5S9KFRP/220506C3RXTGFWZC.png
+2022-05-06 17:02:22.979 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 17:02:27.897 [main] INFO  a.knowledgeplanet.files.Application - Starting Application on zhouyuzhendeMBP with PID 31351 (started by ethan in /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev)
+2022-05-06 17:02:27.898 [main] INFO  a.knowledgeplanet.files.Application - The following profiles are active: dev
+2022-05-06 17:02:27.907 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-06 17:02:28.869 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 17:02:28.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 17:02:28.908 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-05-06 17:02:29.538 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2022-05-06 17:02:29.557 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2022-05-06 17:02:29.558 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-06 17:02:29.559 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-06 17:02:29.646 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-06 17:02:29.732 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1763 ms
+2022-05-06 17:02:32.616 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 17:02:33.403 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-06 17:02:33.425 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-06 17:02:33.441 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-06 17:02:33.473 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2022-05-06 17:02:33.515 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2022-05-06 17:02:33.519 [main] INFO  a.knowledgeplanet.files.Application - Started Application in 6.207 seconds (JVM running for 6.982)
+2022-05-06 17:08:12.492 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

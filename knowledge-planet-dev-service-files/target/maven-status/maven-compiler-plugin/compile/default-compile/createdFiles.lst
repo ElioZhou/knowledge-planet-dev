@@ -1,0 +1,5 @@
+META-INF/spring-configuration-metadata.json
+art/knowledgeplanet/files/resource/FileResource.class
+art/knowledgeplanet/files/controller/FileUploaderController.class
+art/knowledgeplanet/files/service/UploaderService.class
+art/knowledgeplanet/files/service/impl/UploaderServiceImpl.class

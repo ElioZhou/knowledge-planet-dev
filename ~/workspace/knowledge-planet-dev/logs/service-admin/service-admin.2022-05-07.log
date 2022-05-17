@@ -1,0 +1,849 @@
+2022-05-07 11:27:24.788 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-07 12:07:23.895 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 12:07:24.925 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:07:24.926 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 12:07:24.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2022-05-07 12:07:24.963 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:07:24.966 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 12:07:24.981 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2022-05-07 12:07:25.146 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 12:07:25.271 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e41645ef-f601-3ba3-861d-a8494ae287b2
+2022-05-07 12:07:25.887 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 12:07:25.896 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 12:07:25.897 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 12:07:25.897 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 12:07:26.025 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 12:07:26.025 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2106 ms
+2022-05-07 12:07:26.704 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+2022-05-07 12:07:26.722 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-05-07 12:07:26.735 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 12:07:26.747 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at art.knowledgeplanet.admin.Application.main(Application.java:15)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 56 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$2d37db12.CGLIB$sqlSessionFactory$2(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$2d37db12$$FastClassBySpringCGLIB$$44c7d97a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$2d37db12.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594)
+	... 70 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:660)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 72 common frames omitted
+2022-05-07 12:08:34.329 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-07 12:08:34.961 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 12:08:36.375 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:08:36.376 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 12:08:36.403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 MongoDB repository interfaces.
+2022-05-07 12:08:36.421 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:08:36.422 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 12:08:36.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2022-05-07 12:08:36.683 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 12:08:36.823 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e41645ef-f601-3ba3-861d-a8494ae287b2
+2022-05-07 12:08:37.509 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 12:08:37.520 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 12:08:37.520 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 12:08:37.520 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 12:08:37.636 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 12:08:37.637 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2638 ms
+2022-05-07 12:08:38.334 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+2022-05-07 12:08:38.351 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-05-07 12:08:38.362 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 12:08:38.376 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at art.knowledgeplanet.admin.Application.main(Application.java:15)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 56 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$47cb6472.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$47cb6472$$FastClassBySpringCGLIB$$1c42c440.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$47cb6472.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594)
+	... 70 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:660)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 72 common frames omitted
+2022-05-07 12:10:43.251 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-07 12:10:43.672 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 12:10:44.601 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:10:44.602 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 12:10:44.620 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2022-05-07 12:10:44.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:10:44.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 12:10:44.642 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2022-05-07 12:10:44.788 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 12:10:44.890 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e41645ef-f601-3ba3-861d-a8494ae287b2
+2022-05-07 12:10:45.378 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 12:10:45.385 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 12:10:45.386 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 12:10:45.386 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 12:10:45.469 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 12:10:45.470 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1778 ms
+2022-05-07 12:10:46.006 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+2022-05-07 12:10:46.021 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-05-07 12:10:46.030 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 12:10:46.043 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMngController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at art.knowledgeplanet.admin.Application.main(Application.java:15)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserMapper' defined in file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/art/knowledgeplanet/admin/mapper/AdminUserMapper 2.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 56 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$fba6e33c.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$fba6e33c$$FastClassBySpringCGLIB$$432919b4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$fba6e33c.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-service-admin/target/classes/mapper/AdminUserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594)
+	... 70 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for art.knowledgeplanet.admin.mapper.AdminUserMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:660)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 72 common frames omitted
+2022-05-07 12:13:29.053 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-07 12:13:29.690 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 12:13:31.127 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:13:31.128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 12:13:31.152 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 MongoDB repository interfaces.
+2022-05-07 12:13:31.167 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 12:13:31.168 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 12:13:31.179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2022-05-07 12:13:31.372 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 12:13:31.503 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e41645ef-f601-3ba3-861d-a8494ae287b2
+2022-05-07 12:13:32.156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 12:13:32.163 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 12:13:32.164 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 12:13:32.164 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 12:13:32.266 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 12:13:32.267 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2536 ms
+2022-05-07 12:13:33.381 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 12:13:33.381 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 12:13:33.385 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 12:13:33.385 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 12:13:33.530 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 12:13:33.657 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-07 12:13:33.658 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-07 12:13:33.658 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-07 12:13:33.659 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-07 12:13:34.194 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-07 12:13:34.209 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-07 12:13:34.219 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-07 12:13:34.375 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2022-05-07 12:13:34.395 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2022-05-07 12:13:34.400 [main] INFO  a.knowledgeplanet.admin.Application - Started Application in 5.992 seconds (JVM running for 6.841)
+2022-05-07 12:53:04.179 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 12:53:04.188 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-07 12:53:04.277 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 89 ms
+2022-05-07 12:53:04.451 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.AdminUserServiceImpl.queryAdminList====
+2022-05-07 12:53:04.669 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2022-05-07 12:53:05.009 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2022-05-07 12:53:05.128 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：677
+2022-05-07 13:36:10.752 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-07 13:36:11.101 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown initiated...
+2022-05-07 13:36:11.140 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown completed.
+2022-05-07 14:06:24.258 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 14:06:25.297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 14:06:25.298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 14:06:25.384 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79ms. Found 1 MongoDB repository interfaces.
+2022-05-07 14:06:25.401 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 14:06:25.403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 14:06:25.421 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface art.knowledgeplanet.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-07 14:06:25.421 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-05-07 14:06:25.594 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 14:06:25.684 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d575b6ce-ec7e-3965-9bf4-bb1b96948cec
+2022-05-07 14:06:26.256 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 14:06:26.266 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 14:06:26.266 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 14:06:26.266 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 14:06:26.367 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 14:06:26.367 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2083 ms
+2022-05-07 14:06:28.504 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=knowledge-planet.psq0c.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500, requiredReplicaSetName='atlas-qvw5sm-shard-0'}
+2022-05-07 14:06:29.191 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 14:06:29.199 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 14:06:29.205 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 14:06:29.205 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 14:06:29.369 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 14:06:29.427 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-00.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 14:06:29.457 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 14:06:29.458 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-02.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 14:06:29.493 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-07 14:06:29.494 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-07 14:06:29.494 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-07 14:06:29.494 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-07 14:06:29.868 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-07 14:06:29.880 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-07 14:06:29.889 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-07 14:06:30.071 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2022-05-07 14:06:30.093 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2022-05-07 14:06:30.097 [main] INFO  a.knowledgeplanet.admin.Application - Started Application in 8.37 seconds (JVM running for 9.876)
+2022-05-07 14:06:31.392 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:246482}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 14:06:31.392 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:364376}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 14:06:31.392 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:416542}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:06:31.416 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22795330, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 14:06:31 EDT 2022, lastUpdateTimeNanos=9489473812306}
+2022-05-07 14:06:31.416 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22598222, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 14:06:31 EDT 2022, lastUpdateTimeNanos=9489473590090}
+2022-05-07 14:06:31.416 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20706566, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000080, setVersion=8, lastWriteDate=Sat May 07 14:06:31 EDT 2022, lastUpdateTimeNanos=9489472218485}
+2022-05-07 14:06:31.418 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000080 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:06:31.419 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:06:31.419 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:07:02.383 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 14:07:02.385 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-07 14:07:02.412 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2022-05-07 14:07:02.828 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 14:07:03.247 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:417212}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:07:03.419 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：590
+2022-05-07 14:07:03.479 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 14:07:03.572 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：93
+2022-05-07 14:07:22.060 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.delete====
+2022-05-07 14:07:22.147 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：85
+2022-05-07 14:07:22.201 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 14:07:22.221 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：19
+2022-05-07 14:10:46.461 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 14:10:46.505 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：41
+2022-05-07 14:10:46.521 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 14:10:46.546 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：25
+2022-05-07 14:50:36.824 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+com.mongodb.MongoSocketException: knowledge-planet-shard-00-01.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: knowledge-planet-shard-00-01.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 5 common frames omitted
+2022-05-07 14:50:36.824 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+com.mongodb.MongoSocketException: knowledge-planet-shard-00-00.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: knowledge-planet-shard-00-00.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 5 common frames omitted
+2022-05-07 14:50:42.474 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+com.mongodb.MongoSocketException: knowledge-planet-shard-00-02.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: knowledge-planet-shard-00-02.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 5 common frames omitted
+2022-05-07 14:53:26.850 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+com.mongodb.MongoSocketException: knowledge-planet-shard-00-01.psq0c.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: knowledge-planet-shard-00-01.psq0c.mongodb.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 5 common frames omitted
+2022-05-07 14:54:06.863 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+com.mongodb.MongoSocketException: knowledge-planet-shard-00-01.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: knowledge-planet-shard-00-01.psq0c.mongodb.net: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 5 common frames omitted
+2022-05-07 14:54:35.572 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:247426}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 14:54:35.603 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20451977, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 14:54:35 EDT 2022, lastUpdateTimeNanos=12373514224336}
+2022-05-07 14:54:36.349 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:417699}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:54:36.373 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23267180, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000080, setVersion=8, lastWriteDate=Sat May 07 14:54:36 EDT 2022, lastUpdateTimeNanos=12374292941667}
+2022-05-07 14:54:36.374 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 14:54:36.388 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:365332}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 14:54:36.414 [cluster-ClusterId{value='6276b524eea9a70fdc209c90', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24384963, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 14:54:36 EDT 2022, lastUpdateTimeNanos=12374333953160}
+2022-05-07 15:08:03.625 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-07 15:08:03.893 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:417212}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-07 15:08:05.486 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:418159}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:05.518 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:27, serverValue:418159}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 because the pool has been closed.
+2022-05-07 15:08:12.322 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 15:08:13.918 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 15:08:13.919 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 15:08:14.014 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88ms. Found 1 MongoDB repository interfaces.
+2022-05-07 15:08:14.034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 15:08:14.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 15:08:14.054 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface art.knowledgeplanet.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-07 15:08:14.054 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-05-07 15:08:14.269 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 15:08:14.376 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d575b6ce-ec7e-3965-9bf4-bb1b96948cec
+2022-05-07 15:08:14.997 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 15:08:15.006 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 15:08:15.006 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 15:08:15.007 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 15:08:15.107 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 15:08:15.108 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2760 ms
+2022-05-07 15:08:17.019 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=knowledge-planet.psq0c.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500, requiredReplicaSetName='atlas-qvw5sm-shard-0'}
+2022-05-07 15:08:17.705 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-00.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:08:17.742 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:08:17.743 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-02.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:08:17.790 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:08:17.791 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:08:17.796 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:08:17.796 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:08:17.954 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 15:08:18.072 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:418631}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:18.092 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-07 15:08:18.093 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-07 15:08:18.093 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-07 15:08:18.093 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-07 15:08:18.099 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23894349, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000080, setVersion=8, lastWriteDate=Sat May 07 15:08:18 EDT 2022, lastUpdateTimeNanos=13196000918262}
+2022-05-07 15:08:18.102 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000080 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:18.102 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:18.103 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:18.761 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-07 15:08:18.778 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-07 15:08:18.791 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-07 15:08:19.001 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2022-05-07 15:08:19.025 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2022-05-07 15:08:19.029 [main] INFO  a.knowledgeplanet.admin.Application - Started Application in 8.563 seconds (JVM running for 9.718)
+2022-05-07 15:08:19.279 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:365595}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 15:08:19.300 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20524009, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 15:08:19 EDT 2022, lastUpdateTimeNanos=13197203069775}
+2022-05-07 15:08:19.508 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:247690}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 15:08:19.525 [cluster-ClusterId{value='6276c3a18301eb1bb5cdf676', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16935178, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 15:08:19 EDT 2022, lastUpdateTimeNanos=13197428399759}
+2022-05-07 15:08:44.190 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 15:08:44.191 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-07 15:08:44.207 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2022-05-07 15:08:44.398 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:08:44.731 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:418617}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:08:44.800 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：401
+2022-05-07 15:08:44.862 [http-nio-8005-exec-3] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:08:44.942 [http-nio-8005-exec-3] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：79
+2022-05-07 15:08:56.291 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:08:56.324 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：33
+2022-05-07 15:08:56.334 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:08:56.353 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：19
+2022-05-07 15:09:35.507 [http-nio-8005-exec-10] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:09:35.548 [http-nio-8005-exec-10] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：31
+2022-05-07 15:09:35.565 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:09:35.595 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：19
+2022-05-07 15:10:08.775 [http-nio-8005-exec-3] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:10:08.811 [http-nio-8005-exec-3] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：34
+2022-05-07 15:10:08.824 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:10:08.848 [http-nio-8005-exec-6] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：24
+2022-05-07 15:10:25.363 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.delete====
+2022-05-07 15:10:25.424 [http-nio-8005-exec-8] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：61
+2022-05-07 15:10:25.433 [http-nio-8005-exec-10] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:10:25.457 [http-nio-8005-exec-10] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：24
+2022-05-07 15:10:28.108 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.delete====
+2022-05-07 15:10:28.141 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：32
+2022-05-07 15:10:28.147 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:10:28.168 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：21
+2022-05-07 15:10:48.697 [http-nio-8005-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.AdminUserServiceImpl.queryAdminList====
+2022-05-07 15:10:48.986 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2022-05-07 15:10:49.824 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2022-05-07 15:10:49.939 [http-nio-8005-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：1241
+2022-05-07 15:10:53.829 [http-nio-8005-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:10:53.858 [http-nio-8005-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：29
+2022-05-07 15:10:55.943 [http-nio-8005-exec-9] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.CategoryServiceImpl.queryCategoryList====
+2022-05-07 15:10:55.982 [http-nio-8005-exec-9] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：38
+2022-05-07 15:11:05.733 [http-nio-8005-exec-1] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:11:05.754 [http-nio-8005-exec-1] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：20
+2022-05-07 15:11:48.076 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:11:48.119 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：43
+2022-05-07 15:11:48.133 [http-nio-8005-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:11:48.155 [http-nio-8005-exec-5] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：21
+2022-05-07 15:12:01.436 [http-nio-8005-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:12:01.474 [http-nio-8005-exec-7] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：37
+2022-05-07 15:12:01.485 [http-nio-8005-exec-9] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:12:01.508 [http-nio-8005-exec-9] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：23
+2022-05-07 15:13:57.072 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-07 15:13:57.131 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:418617}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 because the pool has been closed.
+2022-05-07 15:13:57.166 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown initiated...
+2022-05-07 15:13:57.172 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Shutdown completed.
+2022-05-07 15:14:02.005 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-07 15:14:02.353 [main] INFO  a.knowledgeplanet.admin.Application - The following profiles are active: dev
+2022-05-07 15:14:04.057 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 15:14:04.059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-07 15:14:04.430 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 363ms. Found 1 MongoDB repository interfaces.
+2022-05-07 15:14:04.482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 15:14:04.484 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 15:14:04.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface art.knowledgeplanet.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-05-07 15:14:04.515 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-05-07 15:14:04.878 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[art.knowledgeplanet.admin]' package. Please check your configuration.
+2022-05-07 15:14:05.023 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d575b6ce-ec7e-3965-9bf4-bb1b96948cec
+2022-05-07 15:14:05.720 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2022-05-07 15:14:05.729 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-07 15:14:05.730 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-07 15:14:05.730 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-05-07 15:14:05.840 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-07 15:14:05.840 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3466 ms
+2022-05-07 15:14:07.714 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=knowledge-planet.psq0c.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500, requiredReplicaSetName='atlas-qvw5sm-shard-0'}
+2022-05-07 15:14:08.186 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-00.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:14:08.220 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-01.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:14:08.221 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-srv-knowledge-planet.psq0c.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server knowledge-planet-shard-00-02.psq0c.mongodb.net:27017 to client view of cluster
+2022-05-07 15:14:08.517 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:14:08.517 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:14:08.522 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:14:08.522 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:14:08.722 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 15:14:08.837 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-07 15:14:08.838 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-07 15:14:08.839 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-07 15:14:08.839 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-05-07 15:14:09.203 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:365693}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.229 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23110737, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-02.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 15:14:09 EDT 2022, lastUpdateTimeNanos=13547121402230}
+2022-05-07 15:14:09.512 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:418365}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.525 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-07 15:14:09.533 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20792519, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000080, setVersion=8, lastWriteDate=Sat May 07 15:14:09 EDT 2022, lastUpdateTimeNanos=13547425602019}
+2022-05-07 15:14:09.533 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000080 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.534 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.534 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.540 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-07 15:14:09.550 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-07 15:14:09.753 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:247792}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 15:14:09.764 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2022-05-07 15:14:09.773 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19596701, setName='atlas-qvw5sm-shard-0', canonicalAddress=knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, hosts=[knowledge-planet-shard-00-00.psq0c.mongodb.net:27017, knowledge-planet-shard-00-01.psq0c.mongodb.net:27017, knowledge-planet-shard-00-02.psq0c.mongodb.net:27017], passives=[], arbiters=[], primary='knowledge-planet-shard-00-01.psq0c.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AZURE'}, Tag{name='region', value='US_EAST_2'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, lastWriteDate=Sat May 07 15:14:09 EDT 2022, lastUpdateTimeNanos=13547665476393}
+2022-05-07 15:14:09.794 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2022-05-07 15:14:09.799 [main] INFO  a.knowledgeplanet.admin.Application - Started Application in 8.303 seconds (JVM running for 9.066)
+2022-05-07 15:18:32.163 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 15:18:32.165 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-07 15:18:32.196 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2022-05-07 15:18:32.394 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2022-05-07 15:18:32.396 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2022-05-07 15:18:33.066 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2022-05-07 15:18:34.796 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:418295}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 15:18:34.866 [http-nio-8005-exec-2] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：1800
+2022-05-07 15:18:34.972 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - ==== 开始执行 class art.knowledgeplanet.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2022-05-07 15:18:35.058 [http-nio-8005-exec-4] INFO  a.k.api.aspect.ServiceLogAspect - 当前执行耗时：85
+2022-05-07 15:28:35.108 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 15:28:35.128 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 15:38:35.324 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 15:38:35.346 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 15:48:35.446 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 15:48:35.455 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 15:58:35.555 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 15:58:35.566 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 16:08:35.668 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 16:08:35.678 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 16:18:35.779 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 16:18:35.786 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 16:28:35.890 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 16:28:35.939 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 16:49:30.465 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:253579}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 16:49:30.521 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:424268}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 16:49:38.029 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:371494}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 17:03:19.202 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:371748}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 17:03:19.283 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:424782}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 17:03:19.912 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:253850}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 17:04:26.886 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 17:04:26.896 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 17:18:46.267 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 17:18:46.293 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 17:32:28.618 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 17:32:28.635 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 17:41:46.145 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:372467}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 17:41:46.151 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:425518}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 17:41:46.499 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:254559}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 17:52:10.002 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 17:52:10.022 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 17:53:01.433 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:254776}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:09:25.043 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:255097}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:09:28.882 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:372986}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 18:09:28.900 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:425620}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 18:11:54.311 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:255141}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:19:01.462 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:425030}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 18:19:01.473 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:373191}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 18:19:07.363 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:255277}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:29:31.455 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:255492}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:29:36.431 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:373408}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 18:29:36.497 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:426106}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 18:45:49.261 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 18:45:49.309 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 18:45:55.297 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:255803}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:45:59.402 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:426918}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 18:46:00.500 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:373719}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 18:51:41.819 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:255920}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 18:51:47.883 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:426220}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 18:51:49.224 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:373840}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:14:49.849 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:374280}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:14:50.108 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:32, serverValue:427537}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:15:01.228 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:33, serverValue:256368}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:17:17.481 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 19:17:17.522 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 19:26:11.026 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:34, serverValue:427532}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:26:11.173 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:35, serverValue:374509}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:26:12.267 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:36, serverValue:256587}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:31:58.040 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:37, serverValue:427816}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:32:18.125 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:38, serverValue:374619}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:32:19.643 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:39, serverValue:256698}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:37:45.421 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:40, serverValue:427601}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:37:45.844 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:41, serverValue:374713}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:37:46.452 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:42, serverValue:256790}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:43:51.685 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:43, serverValue:427501}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:43:51.891 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:44, serverValue:374832}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:43:54.116 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:45, serverValue:256912}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:52:04.323 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:46, serverValue:428223}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:52:04.684 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:47, serverValue:374975}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:52:07.917 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:48, serverValue:257030}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 19:57:50.957 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:49, serverValue:428321}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 19:57:51.284 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:50, serverValue:375076}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 19:57:53.362 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:51, serverValue:257137}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:03:39.937 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:52, serverValue:257291}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:03:56.968 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:53, serverValue:427573}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:03:57.864 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:54, serverValue:375208}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:09:27.294 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 20:09:27.319 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 20:09:35.054 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:55, serverValue:428098}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:09:36.570 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:56, serverValue:375338}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:09:47.392 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:57, serverValue:257414}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:15:20.557 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:58, serverValue:428246}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:15:22.212 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:59, serverValue:375431}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:15:23.126 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:60, serverValue:257524}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:35:49.234 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:61, serverValue:428956}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:35:50.664 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:62, serverValue:375818}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:35:52.751 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:63, serverValue:257911}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:47:12.159 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:65, serverValue:376048}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:47:12.351 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:64, serverValue:429247}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:47:13.349 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:66, serverValue:258134}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:53:21.019 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-01.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:67, serverValue:429251}] to knowledge-planet-shard-00-01.psq0c.mongodb.net:27017
+2022-05-07 20:53:21.076 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-02.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:68, serverValue:376154}] to knowledge-planet-shard-00-02.psq0c.mongodb.net:27017
+2022-05-07 20:53:21.231 [cluster-ClusterId{value='6276c4ff669dce60edc15efc', description='null'}-knowledge-planet-shard-00-00.psq0c.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:69, serverValue:258230}] to knowledge-planet-shard-00-00.psq0c.mongodb.net:27017
+2022-05-07 20:53:54.464 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 20:53:54.915 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:06:18.694 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:06:18.728 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:16:18.910 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:16:18.925 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:26:19.128 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:26:19.149 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:36:19.444 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:36:19.464 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:46:19.658 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:46:19.676 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 21:56:19.774 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 21:56:19.790 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:06:19.991 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:06:20.001 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:16:20.216 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:16:20.228 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:26:20.327 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:26:20.341 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:36:20.449 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:36:20.455 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:46:20.539 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:46:20.548 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 22:56:20.659 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 22:56:20.674 [lettuce-nioEventLoop-4-4] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:06:20.766 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:06:20.781 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:16:20.890 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:16:20.899 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:26:20.996 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:26:21.006 [lettuce-nioEventLoop-4-7] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:36:21.213 [lettuce-eventExecutorLoop-1-8] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:36:21.218 [lettuce-nioEventLoop-4-8] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:46:21.331 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:46:21.343 [lettuce-nioEventLoop-4-1] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
+2022-05-07 23:56:21.546 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /3.99.126.42:6379
+2022-05-07 23:56:21.557 [lettuce-nioEventLoop-4-2] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 3.99.126.42:6379
