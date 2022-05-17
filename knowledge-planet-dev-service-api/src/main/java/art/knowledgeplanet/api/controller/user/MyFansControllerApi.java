@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 @Api(value = "粉丝管理", tags = {"粉丝管理功能的controller"})
 @RequestMapping("fans")
 public interface MyFansControllerApi {
