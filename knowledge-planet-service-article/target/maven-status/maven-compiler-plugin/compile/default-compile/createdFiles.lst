@@ -1,9 +1,0 @@
-art/knowledgeplanet/article/controller/ArticlePortalController.class
-art/knowledgeplanet/article/controller/CommentController.class
-art/knowledgeplanet/article/service/impl/ArticleServiceImpl.class
-art/knowledgeplanet/article/service/impl/ArticlePortalServiceImpl.class
-art/knowledgeplanet/article/service/ArticlePortalService.class
-art/knowledgeplanet/article/service/impl/CommentPortalServiceImpl.class
-art/knowledgeplanet/article/service/CommentPortalService.class
-art/knowledgeplanet/article/mapper/CommentsMapper.class
-art/knowledgeplanet/article/task/TaskPublishArticles.class

@@ -2,6 +2,7 @@ package art.knowledgeplanet.article.controller;
 
 import art.knowledgeplanet.api.BaseController;
 import art.knowledgeplanet.api.controller.article.ArticlePortalControllerApi;
+import art.knowledgeplanet.api.controller.user.UserControllerApi;
 import art.knowledgeplanet.article.service.ArticlePortalService;
 import art.knowledgeplanet.article.service.ArticleService;
 import art.knowledgeplanet.grace.result.GraceJSONResult;
@@ -18,6 +19,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -187,14 +190,36 @@ public class ArticlePortalController extends BaseController implements ArticlePo
         }
         return null;
     }
+    // 注入服务发现，可以获得已经注册的服务相关信息
+    @Autowired
+    private DiscoveryClient discoveryClient;
+    @Autowired
+    private UserControllerApi userControllerApi;
 
     // 发起远程调用，获得用户的基本信息
     private List<AppUserVO> getPublisherList(Set idSet) {
-        String userServerUrlExecute
-                = "http://user.knowledgeplanet.art:8003/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
-        ResponseEntity<GraceJSONResult> responseEntity
-                = restTemplate.getForEntity(userServerUrlExecute, GraceJSONResult.class);
-        GraceJSONResult bodyResult = responseEntity.getBody();
+//        String serviceId = "SERVICE-USER";
+//        List<ServiceInstance> instanceList = discoveryClient.getInstances(serviceId);
+//
+//        ServiceInstance userService = instanceList.get(0);
+
+//        System.out.println(userService);
+//        String userServerUrlExecute
+//                = "http://" + serviceId + "/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
+        GraceJSONResult bodyResult = userControllerApi.queryByIds(JsonUtils.objectToJson(idSet));
+//
+//        String userServerUrlExecute
+//        = "http://" + userService.getHost() +
+//        ":"
+//        + userService.getPort()
+//        + "/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
+
+//        String userServerUrlExecute
+//                = "http://user.knowledgeplanet.art:8003/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
+
+//        ResponseEntity<GraceJSONResult> responseEntity
+//                = restTemplate.getForEntity(userServerUrlExecute, GraceJSONResult.class);
+//        GraceJSONResult bodyResult = responseEntity.getBody();
         List<AppUserVO> publisherList = null;
         if (bodyResult.getStatus() == 200) {
             String userJson = JsonUtils.objectToJson(bodyResult.getData());

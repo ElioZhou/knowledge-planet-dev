@@ -16,10 +16,12 @@
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/Fans.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/vo/ArticleDetailVO.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/bo/AdminLoginBO.java
+/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/Spouse.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/bo/NewAdminBO.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/bo/SaveFriendLinkBO.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/Comments.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/AppUser.java
+/Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/Stu.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/bo/SaveCategoryBO.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/vo/CommentsVO.java
 /Users/ethan/Documents/New Grad/Project/knowledge-planet-dev/knowledge-planet-dev-model/src/main/java/art/knowledgeplanet/pojo/vo/RegionRatioVO.java

@@ -18,3 +18,9 @@ mybatis:
 
 website:
   domain-name: knowledgeplanet.art
+
+# 定义freemarker生成的html位置
+freemarker:
+  html:
+    target: ~/workspace/freemarker_html
+    article: /Users/ethan/Documents/New\ Grad/Project/apache-tomcat-9.0.62/webapps/knowledgeplanet/portal/a

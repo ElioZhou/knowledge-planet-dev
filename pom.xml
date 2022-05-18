@@ -15,6 +15,7 @@
         <module>knowledge-planet-service-admin</module>
         <module>knowledge-planet-service-article</module>
         <module>knowledge-planet-dev-service-files</module>
+        <module>springcloud-eureka</module>
     </modules>
 
     <!--    <properties>-->
@@ -45,7 +46,7 @@
         <mybatis-spring-boot-starter.version>2.1.0</mybatis-spring-boot-starter.version>
         <mapper-spring-boot-starter.version>2.1.5</mapper-spring-boot-starter.version>
         <pagehelper-spring-boot-starter.version>1.2.12</pagehelper-spring-boot-starter.version>
-
+        <spring-boot-freemarker.version>2.2.5.RELEASE</spring-boot-freemarker.version>
         <okhttp.version>4.2.2</okhttp.version>
         <jackson.version>2.10.2</jackson.version>
 
@@ -112,7 +113,12 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper-spring-boot-starter.version}</version>
             </dependency>
-
+<!--            freemarker依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring-boot-freemarker.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>

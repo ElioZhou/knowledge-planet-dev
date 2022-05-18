@@ -1,10 +1,12 @@
 package art.knowledgeplanet.api.controller.user;
 
+import art.knowledgeplanet.api.config.MyServiceList;
 import art.knowledgeplanet.grace.result.GraceJSONResult;
 import art.knowledgeplanet.pojo.bo.RegistLoginBO;
 import art.knowledgeplanet.pojo.bo.UpdateUserInfoBO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +16,8 @@ import javax.validation.Valid;
 
 @Api(value = "用户信息相关Controller", tags = {"用户信息相关Controller"})
 @RequestMapping("user")
+//@FeignClient(value = MyServiceList.SERVICE_USER, fallbackFactory = UserControllerFactoryFallback.class)
+@FeignClient(value = MyServiceList.SERVICE_USER)
 public interface UserControllerApi {
 
     @ApiOperation(value = "获得用户基本信息", notes = "获得用户基本信息", httpMethod = "POST")

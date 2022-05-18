@@ -18,11 +18,11 @@ public class InterceptorConfig implements WebMvcConfigurer {
     public UserTokenInterceptor userTokenInterceptor() {
         return new UserTokenInterceptor();
     }
-//
-//    @Bean
-//    public ArticleReadInterceptor articleReadInterceptor() {
-//        return new ArticleReadInterceptor();
-//    }
+
+    @Bean
+    public ArticleReadInterceptor articleReadInterceptor() {
+        return new ArticleReadInterceptor();
+    }
 
     @Bean
     public UserActiveInterceptor userActiveInterceptor() {
@@ -65,8 +65,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .addPathPatterns("/categoryMng/saveOrUpdateCategory")
                 .addPathPatterns("/categoryMng/getCatList");
 
-//        registry.addInterceptor(articleReadInterceptor())
-//                .addPathPatterns("/portal/article/readArticle");
+        registry.addInterceptor(articleReadInterceptor())
+                .addPathPatterns("/portal/article/readArticle");
 
     }
 }

@@ -1,7 +1,7 @@
 art/knowledgeplanet/pojo/Article.class
 art/knowledgeplanet/pojo/mo/FriendLinkMO.class
-art/knowledgeplanet/pojo/Fans.class
 art/knowledgeplanet/pojo/AppUser.class
 art/knowledgeplanet/pojo/Comments.class
 art/knowledgeplanet/pojo/AdminUser.class
 art/knowledgeplanet/pojo/Category.class
+art/knowledgeplanet/pojo/Fans.class
