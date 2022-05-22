@@ -1,4 +1,4 @@
-# Understanding Eureka Peer to Peer Communication
+# Understanding Eureka Peer to Peer Communication [https://github.com/Netflix/eureka/wiki/Understanding-Eureka-Peer-to-Peer-Communication]
 
 Make sure you have visited this page to understand about Eureka cluster configurations.
 
